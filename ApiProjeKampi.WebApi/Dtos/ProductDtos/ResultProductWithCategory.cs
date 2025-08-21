@@ -1,6 +1,8 @@
-﻿namespace ApiProjeKampi.WebApi.Entities
+﻿using ApiProjeKampi.WebApi.Entities;
+
+namespace ApiProjeKampi.WebApi.Dtos.ProductDtos
 {
-    public class Product
+    public class ResultProductWithCategory
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; }
@@ -12,6 +14,6 @@
 
         public int? CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public string CategoryName { get; set; }
     }
 }
