@@ -78,8 +78,8 @@ namespace ApiProjeKampi.WebApi.Controllers
             }
         }
 
-           
-            public IActionResult GetProductById(int id)
+        [HttpGet("{id}")]
+        public IActionResult GetProductById(int id)
             {
                 var product = _context.Products.Find(id);
                 if (product == null)
